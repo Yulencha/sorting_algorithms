@@ -1,0 +1,100 @@
+.sorter {
+  font-family: Arial, sans-serif;
+  width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sorter__controls {
+  margin-bottom: 20px;
+}
+
+.sorter__control {
+  margin-bottom: 10px;
+}
+
+.sorter__label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sorter__input,
+.sorter__select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sorter__button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.sorter__button:hover {
+  background-color: #0056b3;
+}
+
+.sorter__visualization {
+  width: 100%;
+  min-height: 100px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.sorter__element {
+  padding: 5px;
+  margin: 2px;
+  background-color: blue;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.sorter__stage {
+  margin-bottom: 20px;
+}
+
+.sorter__stage-label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.sorter__elements-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.sorter__element--highlighted {
+  background-color: rgb(136, 219, 165);
+}
+.sorter__description,
+.sorter__comment {
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.sorter__element--pivot {
+  border: 2px solid rgb(156 153 31);
+  background-color: rgb(136, 219, 165);
+}
+
+.sorter__divider {
+  background: transparent;
+  font-size: 0;
+  width: 10px;
+}

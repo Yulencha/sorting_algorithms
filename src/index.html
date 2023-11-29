@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Визуализация алгоритмов сортировки</title>
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+  </head>
+  <body>
+    <div class="sorter">
+      <div class="sorter__controls">
+        <div class="sorter__control">
+          <label for="arraySize" class="sorter__label">Размер массива:</label>
+          <input type="number" id="arraySize" class="sorter__input" value="15" min="1" max="100" />
+        </div>
+        <div class="sorter__control">
+          <label for="arrayChoice" class="sorter__label">Выберите массив:</label>
+          <select id="arrayChoice" class="sorter__select">
+            <option value="random">Случайный</option>
+            <option value="reversed">Обратный</option>
+            <option value="nearlySorted">Почти отсортированный</option>
+            <option value="fewUnique">Несколько уникальных</option>
+          </select>
+        </div>
+        <div class="sorter__control">
+          <label for="algorithm" class="sorter__label">Выберите алгоритм сортировки:</label>
+          <select id="algorithm" class="sorter__select">
+            <option value="bubbleSort">Пузырьковая Сортировка</option>
+            <option value="insertionSort">Сортировка Вставками</option>
+            <option value="selectionSort">Сортировка Выбором</option>
+            <option value="quickSort">Быстрая Сортировка</option>
+            <option value="mergeSort">Сортировка Слиянием</option>
+          </select>
+        </div>
+        <button class="sorter__button" onclick="startSorting()">Начать</button>
+        <button class="sorter__button" onclick="stopSorting()">Остановить</button>
+      </div>
+      <div id="visualization" class="sorter__visualization"></div>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+  <script src="./js/sort.js"></script>
+</html>
